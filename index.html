@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Mi negocio</title>
+    <title>Viajando Ando</title>
 </head>
+
 <body>
     <header>
         <nav>
             <section class="navbar-logo">
-                <img src="img/logo.png" alt="">
+                <img src="img/logo.png" alt="Logo de Viajando Ando">
             </section>
+
             <section class="navbar-navegation">
                 <a href="#destinos">Destinos</a>
                 <a href="#paquetes">Paquetes</a>
@@ -19,41 +21,104 @@
             </section>
         </nav>
     </header>
+
     <main>
         <section id="main-image">
-            <img src="img/image.png" alt="">
+            <img src="img/image.png" alt="Paisaje turístico">
+
             <h1>Descubre el mundo con Viajando Ando</h1>
+
             <p>
-                Encuentra destinos increibles, paquetes turisticos y
-                experiencias inolvidables para tus próximas vacaciones
-                Planifica tu viaje de manera facil, segura y personalizada
+                Encuentra destinos increíbles, paquetes turísticos y
+                experiencias inolvidables para tus próximas vacaciones.
+                Planifica tu viaje de manera fácil, segura y personalizada.
             </p>
         </section>
 
-        <section class="categories">
+        <section class="categories" id="paquetes">
 
         </section>
 
-        <section class="places">
+        <section class="places" id="destinos">
             <section class="card-places">
+
             </section>
+
             <section class="card-places">
+
             </section>
         </section>
 
         <section class="more-information">
 
         </section>
+
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+
+            <form>
+                <section>
+                    <label for="nombre">Nombre completo</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                    >
+                </section>
+
+                <section>
+                    <label for="correo">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        required
+                    >
+                </section>
+
+                <section>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                    ></textarea>
+                </section>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
+
     <footer>
         <section class="footer-content">
-            <section class="social-media"></section>
-            <ul>
-                <li>Numero dee telefono:</li>
-                <li>Ubicacion</li>
-                <li>Email:</li>
-            </ul>
+            <section>
+                <h3>Viajando Ando</h3>
+
+                <p>
+                    Encuentra destinos y paquetes turísticos para tus próximas
+                    vacaciones.
+                </p>
+            </section>
+
+            <section>
+                <h3>Contacto</h3>
+
+                <ul>
+                    <li>Teléfono: +591 71234567</li>
+                    <li>Ubicación: La Paz, Bolivia</li>
+                    <li>Email: viajandoando@gmail.com</li>
+                </ul>
+            </section>
+
+            <section class="social-media">
+                <h3>Redes sociales</h3>
+
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </section>
         </section>
+
         <section class="footer-bottom">
             <p>Herlan Castro - 2026</p>
         </section>
