@@ -6,6 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
     background-color: #efeecd;
     color: #101010;
 }
@@ -25,14 +27,18 @@ nav {
     width: 60px;
 }
 
-nav section:last-child {
+.navbar-navegation {
     display: flex;
     gap: 10px;
 }
 
-nav a {
+.navbar-navegation a {
     color: #101010;
     text-decoration: none;
+}
+
+.navbar-navegation a:hover {
+    color: #7e661a;
 }
 
 button {
@@ -43,6 +49,7 @@ button {
     color: white;
     font-size: 17px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 button:hover {
@@ -64,10 +71,41 @@ h1 {
     font-size: 36px;
 }
 
+h2 {
+    margin-bottom: 15px;
+}
+
 p {
     margin-top: 10px;
     font-size: 20px;
     color: #775f5f;
+}
+
+.categories,
+.places,
+.more-information,
+#contacto {
+    margin: 30px 20px;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.categories,
+.more-information,
+#contacto {
+    background-color: rgb(245, 223, 183);
+}
+
+.places {
+    background-color: #f8f8f8;
+}
+
+.card-places {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 8px;
 }
 
 footer {
