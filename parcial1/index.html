@@ -24,7 +24,19 @@
             <li>Submarino - Bs 15</li>
         </ul>
     </section>
-    <section id="contacto"></section>
+    <section id="contacto">
+        <h2>Haz tu pedido</h2>
+        <form>
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" required>
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" required>
+            <label for="pedido">Tu pedido</label>
+            <textarea id="pedido"></textarea>
+        </form>
+        <button type="button" id="btn-confirmar">Confirmar pedido</button>
+        <p id="mensaje" class="oculto"></p>
+    </section>
     <footer></footer>
 
 </body>
