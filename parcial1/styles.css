@@ -12,7 +12,6 @@ body {
     color: #4B1426;
     background-color: #558467;
     font-size: 16px;
-    line-height: 1.5;
 }
 
 main {
@@ -24,12 +23,12 @@ main {
 header {
     background-color: #4B1426;
     color: white;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
 }
 
 h1 {
-    margin: 0;
+    margin: 10px;
 }
 
 nav {
@@ -44,18 +43,6 @@ nav a {
     color: white;
     font-family: Arial, sans-serif;
     text-decoration: none;
-}
-
-@media (max-width: 700px) {
-    nav {
-        display: block;
-        text-align: center;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
 }
 
 section {
@@ -120,4 +107,17 @@ footer {
     text-align: center;
     padding: 20px;
 
+}
+
+
+@media (max-width: 700px) {
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
 }
