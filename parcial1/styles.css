@@ -57,3 +57,67 @@ nav a {
         margin: 10px 0;
     }
 }
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #17433F;
+    border-radius: 10px;
+    background-color: white;
+}
+
+h2 {
+    color: #4B1426;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #558467;
+    border-radius: 5px;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+button {
+    background-color: #4B1426;
+    color: white;
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #17433F;
+}
+
+#mensaje {
+    color: #17433F;
+    padding: 10px;
+    border: 1px solid #558467;
+    border-radius: 5px;
+}
+
+
+.oculto {
+    display: none;
+}
+
+footer {
+    background-color: #17433F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+}
