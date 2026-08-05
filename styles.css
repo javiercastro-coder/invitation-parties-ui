@@ -214,6 +214,76 @@ body.modo-oscuro .navbar-navegation a {
     color: #f2f2f2;
 }
 
+#contacto form {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contacto form section {
+    margin-bottom: 20px;
+}
+
+#contacto label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #3f300f;
+}
+
+#contacto input,
+#contacto textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #9b7b22;
+    border-radius: 6px;
+    background-color: #fffdf5;
+    color: #101010;
+    font: inherit;
+}
+
+#contacto input:focus,
+#contacto textarea:focus {
+    border-color: #5e481a;
+    outline: 3px solid rgba(171, 137, 41, 0.3);
+}
+
+#contacto textarea {
+    resize: vertical;
+}
+
+#contacto button {
+    width: 100%;
+}
+
+.aviso {
+    display: none;
+    margin-top: 16px;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.aviso.error {
+    display: block;
+    border: 1px solid #a61b1b;
+    background-color: #ffe5e5;
+    color: #8b1111;
+}
+
+.aviso.exito {
+    display: block;
+    border: 1px solid #247a35;
+    background-color: #e3f5e7;
+    color: #195c28;
+}
+
+#contacto .campo-error {
+    border-color: #b42318;
+}
+
 @media (max-width: 600px) {
     header {
         padding: 12px 16px;
@@ -275,6 +345,20 @@ body.modo-oscuro .navbar-navegation a {
     section,
     footer {
         min-width: 0;
+    }
+
+    #contacto {
+        margin-right: 12px;
+        margin-left: 12px;
+        padding: 20px 16px;
+    }
+
+    #contacto form,
+    #contacto input,
+    #contacto textarea,
+    #contacto button {
+        width: 100%;
+        max-width: 100%;
     }
 
 }
