@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>Viajando Ando</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <section class="navbar-logo">
+                <img src="img/logo.png" alt="Logo de Viajando Ando">
+            </section>
+
+            <button type="button" id="btn-menu" aria-label="Abrir menu">☰</button>
+
+            <section class="navbar-navegation">
+                <a href="#destinos">Destinos</a>
+                <a href="#paquetes">Paquetes</a>
+                <a href="#contacto">Contacto</a>
+                <button type="button" id="btn-tema">Modo oscuro</button>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+        <section id="main-image">
+            <img src="img/image.png" alt="Paisaje turistico">
+
+            <h1>Descubre el mundo con Viajando Ando</h1>
+
+            <p>
+                Encuentra destinos increibles, paquetes turisticos y
+                experiencias inolvidables para tus proximas vacaciones.
+                Planifica tu viaje de manera facil, segura y personalizada.
+            </p>
+        </section>
+
+        <section class="categories" id="paquetes">
+            <h2>Paquetes turisticos</h2>
+
+            <p>
+                Tenemos diferentes opciones de viajes para familias y grupos.
+            </p>
+        </section>
+
+        <section class="places" id="destinos">
+            <h2>Destinos</h2>
+
+            <section class="card-places">
+                <h3>Cancun</h3>
+                <p>Disfruta de playas, hoteles y actividades turisticas.</p>
+            </section>
+
+            <section class="card-places">
+                <h3>Cusco</h3>
+                <p>Conoce lugares historicos y paisajes inolvidables.</p>
+            </section>
+        </section>
+
+        <section class="more-information">
+            <h2>Mas informacion</h2>
+
+            <p>
+                Nuestros paquetes pueden incluir transporte, hospedaje
+                y actividades.
+            </p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contactanos</h2>
+
+            <form id="form-contacto" action="procesar.php" method="POST" novalidate>
+                <section>
+                    <label for="nombre">Nombre completo</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Tu nombre y apellido"
+                        required
+                    >
+                </section>
+
+                <section>
+                    <label for="correo">Correo electronico</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="tunombre@correo.com"
+                        required
+                    >
+                </section>
+
+                <section>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        placeholder="Cuentanos que destino o paquete te interesa"
+                        required
+                    ></textarea>
+                </section>
+
+                <button type="submit">Enviar</button>
+                <p id="aviso-contacto" class="aviso" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-content">
+            <section>
+                <h3>Viajando Ando</h3>
+
+                <p>
+                    Encuentra destinos y paquetes turisticos para tus proximas
+                    vacaciones.
+                </p>
+            </section>
+
+            <section>
+                <h3>Contacto</h3>
+
+                <ul>
+                    <li>Telefono: +591 71234567</li>
+                    <li>Ubicacion: La Paz, Bolivia</li>
+                    <li>Email: viajandoando@gmail.com</li>
+                </ul>
+            </section>
+
+            <section class="social-media">
+                <h3>Redes sociales</h3>
+
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </section>
+        </section>
+
+        <section class="footer-bottom">
+            <p>Herlan Castro - 2026</p>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
