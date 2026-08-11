@@ -36,8 +36,6 @@ function mostrarError(mensaje, campo) {
 }
 
 function revisarFormulario(event) {
-    event.preventDefault();
-
     const nombre = campoNombre.value.trim();
     const correo = campoCorreo.value.trim();
     const mensaje = campoMensaje.value.trim();
@@ -48,21 +46,25 @@ function revisarFormulario(event) {
     campoMensaje.classList.remove("campo-error");
 
     if (nombre === "") {
+        event.preventDefault();
         mostrarError("escribe tu nombre completo.", campoNombre);
         return;
     }
 
     if (nombre.length < 3) {
+        event.preventDefault();
         mostrarError("el nombre debe tener al menos 3 caracteres.", campoNombre);
         return;
     }
 
     if (correo === "") {
+        event.preventDefault();
         mostrarError("escribe tu correo electronico.", campoCorreo);
         return;
     }
 
     if (!expresionCorreo.test(correo)) {
+        event.preventDefault();
         mostrarError(
             "Escribe un correo electronico valido",
             campoCorreo
@@ -71,24 +73,16 @@ function revisarFormulario(event) {
     }
 
     if (mensaje === "") {
+        event.preventDefault();
         mostrarError("escribe un mensaje.", campoMensaje);
         return;
     }
 
     if (mensaje.length < 10) {
+        event.preventDefault();
         mostrarError("El mensaje debe tener al menos 10 caracteres.", campoMensaje);
         return;
     }
-
-    avisoContacto.textContent =
-        "Mensaje enviado correctamente. Nos contactaremos contigo pronto.";
-    avisoContacto.classList.add("exito");
-    avisoContacto.classList.remove("error");
-    formularioContacto.reset();
-
-    campoNombre.classList.remove("campo-error");
-    campoCorreo.classList.remove("campo-error");
-    campoMensaje.classList.remove("campo-error");
 }
 
 if (
