@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heladeria Doña nieve</title>
+</head>
+<body>
+    <header>
+        <h1>Heladeria Doña nieve</h1>
+        <p>Bienveenidos a la Heladeria Doña nieve , su heladeria de confianza</p>
+    </header>
+    <main>
+        <form id="form-helados" action="procesar.php" method="POST" novalidate>
+            <section>
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido" required >
+            </section>
+
+            <section>
+                <label for="correo">Correo electronico</label>
+                <input type="email" id="correo" name="correo" placeholder="tucorreo@gmail.com" required >
+            </section>
+
+            <section>
+                <label for="mensaje">Qué sabores quieres</label>
+                <textarea id="sabores" name="sabores" rows="5" placeholder="Escribe los sabores que quieres" ></textarea>
+            </section>
+
+            <button type="submit">Enviar mi pedido</button>
+            <p id="aviso-helados" class="aviso"></p>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
