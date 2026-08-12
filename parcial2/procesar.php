@@ -9,7 +9,7 @@ $carta = array(
     "Copa doble - Bs 15",
     "Litro para llevar - Bs 35"
 );
-echo "<h1>Pedido anotado - te atiende Herlan Javier Castro Acero</h1>";
+echo "<h1>Pedido recibido en Heladería Doña Nieve</h1>";
 echo "<p>Nombre: " . $nombre . "</p>";
 echo "<p>Correo: " . $correo . "</p>";
 echo "<p>Sabores: " . $sabores . "</p>";

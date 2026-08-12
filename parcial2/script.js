@@ -17,7 +17,7 @@ function manejarEnvio(event) {
         avisoHelados.classList.add("error");
         avisoHelados.classList.remove("exito");
     } else {
-        avisoHelados.textContent = "Pedido listo";
+        avisoHelados.textContent = "Pedido anotado - te atiende Herlan Javier Castro Acero";
         avisoHelados.classList.add("exito");
         avisoHelados.classList.remove("error");
     }
