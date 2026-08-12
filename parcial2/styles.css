@@ -1,0 +1,44 @@
+body {
+    background-color: #eedcc0;
+    font-family: Arial, sans-serif;
+}
+
+header,
+footer {
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
+
+form {
+    background-color: rgb(238, 224, 224);
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+form section {
+    margin-bottom: 15px;
+}
+
+label,
+input,
+textarea {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #71ae7f;
+    border: 1px solid #86e984;
+}
