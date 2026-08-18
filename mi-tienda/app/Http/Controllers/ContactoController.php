@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contacto;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 
@@ -25,8 +26,10 @@ class ContactoController extends Controller
             ],
         );
 
+        Contacto::create($datos);
+
         return redirect()
             ->route('contacto')
-            ->with('datos_contacto', $datos);
+            ->with('exito', 'Mensaje enviado correctamente.');
     }
 }

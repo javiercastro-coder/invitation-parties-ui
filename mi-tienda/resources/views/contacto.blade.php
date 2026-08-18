@@ -6,6 +6,10 @@
     <section id="contacto">
         <h1>Contáctanos</h1>
 
+        @if (session('exito'))
+            <p class="aviso exito" role="status">{{ session('exito') }}</p>
+        @endif
+
         <form id="form-contacto" action="{{ route('contacto.enviar') }}" method="POST" novalidate>
             @csrf
 
@@ -57,15 +61,6 @@
 
             <button type="submit">Enviar</button>
         </form>
-
-        @if (session('datos_contacto'))
-            <section>
-                <h2>Datos recibidos</h2>
-                <p><strong>Nombre:</strong> {{ session('datos_contacto.nombre') }}</p>
-                <p><strong>Correo:</strong> {{ session('datos_contacto.correo') }}</p>
-                <p><strong>Mensaje:</strong> {{ session('datos_contacto.mensaje') }}</p>
-            </section>
-        @endif
 
         <a href="{{ route('inicio') }}">Regresar al inicio</a>
     </section>

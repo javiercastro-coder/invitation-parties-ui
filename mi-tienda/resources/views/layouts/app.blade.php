@@ -17,9 +17,23 @@
             <button type="button" id="btn-menu" aria-label="Abrir menú">☰</button>
 
             <section class="navbar-navegation">
+                <a href="{{ route('inicio') }}">Inicio</a>
                 <a href="{{ route('inicio') }}#destinos">Destinos</a>
                 <a href="{{ route('inicio') }}#paquetes">Paquetes</a>
                 <a href="{{ route('contacto') }}">Contacto</a>
+
+                @guest
+                    <a href="{{ route('login') }}">Login</a>
+                @endguest
+
+                @auth
+                    <a href="{{ route('panel') }}">Panel</a>
+                    <form action="{{ route('logout') }}" method="POST">
+                        @csrf
+                        <button type="submit">Cerrar sesión</button>
+                    </form>
+                @endauth
+
                 <button type="button" id="btn-tema">Modo oscuro</button>
             </section>
         </nav>

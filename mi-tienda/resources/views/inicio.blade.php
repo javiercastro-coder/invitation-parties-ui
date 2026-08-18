@@ -28,15 +28,22 @@
     <section class="places" id="destinos">
         <h2>Destinos</h2>
 
-        <section class="card-places">
-            <h3>Cancún</h3>
-            <p>Disfruta de playas, hoteles y actividades turísticas.</p>
-        </section>
+        @forelse ($lugares as $lugar)
+            <section class="card-places">
+                @if ($lugar->imagen)
+                    <img
+                        src="{{ asset('img/' . $lugar->imagen) }}"
+                        alt="Imagen de {{ $lugar->nombre }}"
+                    >
+                @endif
 
-        <section class="card-places">
-            <h3>Cusco</h3>
-            <p>Conoce lugares históricos y paisajes inolvidables.</p>
-        </section>
+                <h3>{{ $lugar->nombre }}</h3>
+                <p><strong>Ubicación:</strong> {{ $lugar->ubicacion }}</p>
+                <p>{{ $lugar->descripcion }}</p>
+            </section>
+        @empty
+            <p class="sin-lugares">Todavía no hay destinos registrados.</p>
+        @endforelse
     </section>
 
     <section class="more-information">
