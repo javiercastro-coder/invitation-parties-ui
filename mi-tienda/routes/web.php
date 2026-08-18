@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ContactoController;
 use App\Http\Controllers\LugarController;
+use App\Models\Libro;
 use App\Models\Lugar;
 use Illuminate\Support\Facades\Route;
 
@@ -38,4 +39,18 @@ Route::middleware('auth')->group(function () {
 
     Route::post('/logout', [AuthController::class, 'cerrarSesion'])
         ->name('logout');
+});
+
+Route::get('/libros', function () {
+    $libros = Libro::all();
+
+    return view('libros.index', compact('libros'));
+});
+
+Route::get('/libros/nuevo', function () {
+    return view('libros.nuevo');
+});
+
+Route::post('/libros/nuevo', function () {
+    return redirect('/libros');
 });
