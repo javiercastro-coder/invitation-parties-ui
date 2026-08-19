@@ -1,13 +1,16 @@
 @extends('layouts.app')
 
-@section('title', 'Registrar libro')
+@section('title', 'Librería El Lápiz - Registrar libro')
+
+@section('footer-text', 'Integradora - Herlan Javier Castro Acero - 18 de agosto de 2026')
 
 @section('content')
-    <section>
-        <h1>Registrar libro</h1>
+    <section class="form-container">
+        <h1>Librería El Lápiz</h1>
+        <h2>Registrar libro</h2>
 
         @if ($errors->any())
-            <ul>
+            <ul class="aviso error">
                 @foreach ($errors->all() as $error)
                     <li>{{ $error }}</li>
                 @endforeach

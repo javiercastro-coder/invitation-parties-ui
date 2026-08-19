@@ -2,8 +2,10 @@
 
 @section('title', 'Librería El Lápiz')
 
+@section('footer-text', 'Integradora - Herlan Javier Castro Acero - 18 de agosto de 2026')
+
 @section('content')
-    <section>
+    <section class="panel-container">
         <h1>Librería El Lápiz</h1>
 
         <p>
@@ -24,7 +26,7 @@
             </article>
         @endforeach
 
-        <p>Catálogo atendido por Jorge Luis Castro Acero</p>
+        <p>Catálogo atendido por Herlan Javier Castro Acero</p>
 
         <a href="/libros/nuevo">Registrar nuevo libro</a>
     </section>

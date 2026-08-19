@@ -73,7 +73,7 @@
         </section>
 
         <section class="footer-bottom">
-            <p>Herlan Castro - 2026</p>
+            <p>@yield('footer-text', 'Herlan Castro - 2026')</p>
         </section>
     </footer>
 </body>
